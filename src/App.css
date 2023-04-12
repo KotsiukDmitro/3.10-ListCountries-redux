@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 50px;
+  min-height: 100vh;
+
+}
+
+.light {
+  background-color: rgb(216, 246, 216);
+}
+
+.dark {
+  background-color: rgb(109, 103, 103);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 35px;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.header-text {
+  margin-left: 20px;
+  color: rgb(14, 14, 121);
+}
+
+.btn-theme {
+  margin-right: 10px;
+  background-color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+.row-search {
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-search-country {
+  border: none;
+  outline: none;
+  width: 12rem;
+  height: 30px;
+  padding-left: 10px;
+  font-style: italic;
+  border-radius: 2px;
+}
+
+.select-region {
+  width: 8rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: rgb(124, 42, 42);
+  font-weight: 500;
+  border-radius: 2px;
+  letter-spacing: 2px;
+}
+
+.selected-countries {
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.selected-countries:last-child {
+  justify-content: flex-start;
+}
+
+.card {
+  border: 1px solid blue;
+  border-radius: 2px;
+  width: 150px;
+  height: 200px;
+  background-color: white;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px 0px #94b1d2;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+
+.card:hover {
+  border: 2px solid red;
+  transition: 0.5s;
+  transform: scale(1.2);
+}
+
+.flag {
+  height: 50%;
+  width: 100%;
+  border-bottom: 1px solid blue;
+}
+
+.name-country {
+  color: rgb(199, 28, 28);
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.country-info {
+  margin-left: 10px;
+  font-style: italic;
+  font-size: 12px;
+  color: rgb(74, 71, 71);
+  font-size: 10px;
+}
+
+.data {
+  font-size: 8px;
+  color: black;
+}
+
+.country-info-details {
+  border: 1px solid blue;
+  border-radius: 4px;
+  width: 300px;
+  height: 400px;
+  background-color: white;
+  box-shadow: 2px 2px 5px 0px #94b1d2;
+  transition: .5s;
+  transform: scale(0);
+  position: fixed;
+  margin: 10% 40%;
+  z-index: 100;
+}
+
+.active {
+  transform: scale(1);
+}
+
+.close {
+  color: red;
+  cursor: pointer;
+}
+
+.close:hover {
+  transform: scale(1.2);
+}
+
+.backDrop {
+  background-color: rgb(57, 47, 47);
+  opacity: .5;
+  transition: 1s;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+}
